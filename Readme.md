@@ -1,8 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Анна Бочкова](https://up.htmlacademy.ru/htmlcss/39/user/104358).
-* Наставник: [Иван Жарков](https://htmlacademy.ru/profile/id191422)
-
+* Наставник: [Иван Жарков](https://htmlacademy.ru/profile/id191422).
+* Сайт [Мой проект Седона](https://annau9ust.github.io/104358-sedona-39/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>

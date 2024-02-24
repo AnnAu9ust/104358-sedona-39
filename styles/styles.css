@@ -28,7 +28,7 @@ body {
 }
 
 .navigation-link, .navigation-user-link {
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -40,14 +40,19 @@ body {
 }
 
 .navigation-user-button {
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 20px;
   text-align: center;
   color: #ffffff;
   background-color: #756157;
+  border-radius: 4px;
+  padding: 8px 50px;
+  width: 160px;
+  height: 36px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 
@@ -57,57 +62,138 @@ body {
   background-image: url("../images/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  text-align: center;
 }
 
-.hero, .conditions-title, p{
+.advantages {
+  font-family: inherit;
   text-align: center;
 }
 
 .section-header {
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
   font-weight: 700;
   font-size: 30px;
-  line-height: 24px;
+  line-height: 36px;
   text-transform: uppercase;
-  text-align: center;
 }
 
-.advantages-list {
-  text-align: center;
+.section-description {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
 }
 
-.advantages-title {
-  font-family: "PT Sans", sans-serif;
-  font-size: 24px;
+.advantages-title, .conditions-title {
+  font-family: inherit;
   font-weight: 700;
+  font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
 }
 
-
-.search-button {
-  font-family: "PT Sans", sans-serif;
+.advantages-item-description, .conditions-item-description {
+  font-family: inherit;
   font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+.advantages-smalltown, .advantages-bridge {
+  background-color: #82b3d3;
+}
+
+.advantages-smallarea, .advantages-tourists,
+.conditions-accomodation, .conditions-souveniers{
+  background-color: #f0f6fa;
+}
+
+.advantages-road {
+  background-color: #e6f0f6;
+}
+
+.conditions {
+  font-family: inherit;
+  text-align: center;
+}
+
+.hotel-searching {
+  font-family: inherit;
+  text-align: center;
+}
+
+.hotel-search-button {
+  font-family: inherit;
+  font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-align: center;
   color: #ffffff;
   background-color: #756157;
+  border-radius: 4px;
+  padding: 8px 50px;
+  width: 376px;
+  height: 52px;
   text-transform: uppercase;
-
+  text-decoration: none;
 }
 
 .subscription {
   color:#ffffff;
   background-color: #000000;
+  text-align: center;
   background-image: url("../images/subscribe.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
+.subcription-description {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+
+}
+
+.email-input {
+  border-radius: 4px 0 0 4px;
+  padding: 12px 20px;
+}
+
+.subscription-submit {
+  font-family: "PT Sans", sans-serif;
+  color: #ffffff;
+  background-color: #82b3d3;
+  border-radius: 0 4px 4px 0;
+  padding: 8px 50px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.vkontakte {
+  width: 47px;
+  height: 40px;
+  background-image: url("../images/social/social-vk.svg");
+  background-repeat: no-repeat;
+}
+.telegram {
+  width: 47px;
+  height: 40px;
+  background-image: url("../images/social/social-telegram.svg");
+  background-repeat: no-repeat;
+}
+.youtube {
+  width: 47px;
+  height: 40px;
+  background-image: url("../images/social/social-youtube.svg");
+  background-repeat: no-repeat;
+}
 
 .phone-number {
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
@@ -125,4 +211,138 @@ body {
 
 .visually-hidden {
   visibility: hidden;
+}
+
+/*
+Страница каталога
+*/
+
+.catalog-main-selection {
+  color:#ffffff;
+  background-color: #000000;
+  background-image: url("../images/filter.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.catalog-header {
+  text-align: left;
+}
+
+.main-inner-title {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.catalog-filter-group {
+  text-align: left;
+  width: 150px;
+  height: 157px;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.catalog-filter-item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.catalog-button{
+  font-family: "PT Sans", sans-serif;
+  color: #ffffff;
+  background-color: #82b3d3;
+  border-radius: 4px;
+  padding: 8px 50px;
+  width: 191px;
+  height: 36px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.catalog-reset-button {
+  font-family: "PT Sans", sans-serif;
+  color: #ffffff;
+  background-color: transparent;
+  border-radius: 4px;
+  padding: 8px 50px;
+  width: 191px;
+  height: 36px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hotel-name {
+  color: #000000;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: capitalize;
+}
+
+
+.button-details {
+  color: #ffffff;
+  background-color: #756157;
+  border-radius: 4px;
+  padding: 8px 50px;
+  width: 140px;
+  height: 36px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.button-favourite {
+  color: #ffffff;
+  background-color: #82b3d3;
+  border-radius: 4px;
+  padding: 8px 50px;
+  width: 140px;
+  height: 36px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.pagination-item {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 4px;
+  width: 60px;
+  height: 60px;
+  background-color: #82b3d3;
+}
+ .pagination-item-current {
+  background-color: #E5E5E5;
+ }
+
+ .catalog-subscription {
+  text-align: center;
+
 }

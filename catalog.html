@@ -36,6 +36,9 @@
               <span class="visually-hidden">
                 Избранное
               </span>
+              <span class="likes-number">
+                12
+              </span>
             </a>
           </li>
         </ul>
@@ -106,7 +109,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="catalog-filter-price">
+            <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость, ₽</legend>
               <label for="min-price">
                 <span class="text-price">от</span>
@@ -124,12 +127,12 @@
       </section>
       <section class="catalog" data-test="catalog">
         <div class="view-panel">
-          <h2 class="section-header">Найдено страниц:
+          <h2 class="section-header">Найдено гостиниц:
             <span class="result-number">38</span>
           </h2>
           <select class="select-control" aria-label="Сортировка">
-            <option value="cheap">Сначала дешёвое</option>
-            <option value="expensive">Сначала дорогое</option>
+            <option value="cheap">Сначала дешёвые</option>
+            <option value="expensive">Сначала дорогие</option>
           </select>
           <ul class="catalog-view">
             <li class="catalog-item">
@@ -154,11 +157,11 @@
             <a href="#">
               <img src="images/hotels/hotel-1.jpg" alt="Вид на звездное небо между гор">
             </a>
-            <a href="#" tabindex="-1">
+            <a class="hotel-name-link" href="#" tabindex="-1">
               <h3 class="hotel-name">Amara Resort & Spa</h3>
             </a>
-            <p>Гостиница</p>
-            <p class="card-price">от 4000 ₽</p>
+            <p class="hotel-spelling">Гостиница</p>
+            <p class="hotel-price">от 4000 ₽</p>
             <a class="button-details" href="#">Подробнее</a>
             <a class="button-favourite" href="#">В избранное</a>
             <p class="stars four-stars">
@@ -170,13 +173,13 @@
             <a href="#">
               <img src="images/hotels/hotel-2.jpg" alt="Скалы на фоне вечернего неба с радугой">
             </a>
-            <a href="#" tabindex="-1">
+            <a class="hotel-name-link" href="#" tabindex="-1">
               <h3 class="hotel-name">Villas at Poco Diablo</h3>
             </a>
-            <p>Гостиница</p>
-            <p>от 5000 ₽</p>
+            <p class="hotel-spelling">Гостиница</p>
+            <p class="hotel-price">от 5000 ₽</p>
             <a class="button-details" href="#">Подробнее</a>
-            <a class="button-favourite" href="#">В избранном</a>
+            <a class="button-favourite-selected" href="#">В избранном</a>
             <p class="stars four-stars">
               <span class="visually-hidden">4 звезды</span>
             </p>
@@ -186,11 +189,11 @@
             <a href="#">
               <img src="images/hotels/hotel-3.jpg" alt="Природа и скалы на фоне неба">
             </a>
-            <a href="#" tabindex="-1">
+            <a class="hotel-name-link" href="#" tabindex="-1">
               <h3 class="hotel-name">Desert Quail Inn</h3>
             </a>
-            <p>Гостиница</p>
-            <p>от 2500 ₽</p>
+            <p class="hotel-spelling">Гостиница</p>
+            <p class="hotel-price">от 2500 ₽</p>
             <a class="button-details" href="#">Подробнее</a>
             <a class="button-favourite" href="#">В избранное</a>
             <p class="stars three-stars">
@@ -202,11 +205,11 @@
             <a href="#">
               <img src="images/hotels/hotel-4.jpg" alt="Горы на фоне ночного звездного неба">
             </a>
-            <a href="#" tabindex="-1">
+            <a class="hotel-name-link" href="#" tabindex="-1">
               <h3 class="hotel-name">GreenTree Inn</h3>
             </a>
-            <p>Гостиница</p>
-            <p>от 1500 ₽</p>
+            <p class="hotel-spelling">Гостиница</p>
+            <p class="hotel-price">от 1500 ₽</p>
             <a class="button-details" href="#">Подробнее</a>
             <a class="button-favourite" href="#">В избранное</a>
             <p class="stars two-stars">
@@ -264,8 +267,8 @@
           </a>
         </li>
       </ul>
-      <a class="phone-number" href="+78128121212">+7 (812) 812-12-12</a>
-      <img class="author-logo" src="images/htmlacademy-logo.svg" width="115" height="33" alt="Логотип htmlacademy">
+      <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a href="https://htmlacademy.ru/"><img class="author-logo" src="images/htmlacademy-logo.svg" width="115" height="33" alt="Логотип htmlacademy"></a>
     </footer>
   </body>
 </html>

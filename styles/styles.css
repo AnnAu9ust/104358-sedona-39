@@ -73,7 +73,9 @@ body {
 }
 
 .navigation-user {
+  display: flex;
   max-width: 300px;
+  margin: 0;
   margin-left: auto;
   list-style: none;
 }
@@ -88,6 +90,11 @@ body {
   text-transform: capitalize;
   margin: 0;
   padding: 0;
+}
+
+.navigation-user .navigation-user-link {
+  min-width: 44px;
+  min-height: 64px;
 }
 
 .navigation-link, .navigation-user-link {
@@ -129,6 +136,7 @@ body {
 .main-container {
   flex-grow: 1;
 }
+
 
 .hero {
   color:#000000;
@@ -262,10 +270,11 @@ body {
 .hotel-searching {
   font-family: inherit;
   text-align: center;
-  padding: 96px 64px;
+  padding: 96px 304px;
 }
 
 .hotel-search-button {
+  display: block;
   font-family: inherit;
   font-weight: 700;
   font-size: 20px;
@@ -309,6 +318,8 @@ body {
   padding: 12px 20px;
   width: 452px;
   height: 52px;
+  border: none;
+  background-color: #f2f2f2;
 }
 
 .subscription-submit {
@@ -324,6 +335,7 @@ body {
   padding: 8px 50px;
   width: 232px;
   height: 52px;
+  border: none;
 }
 
 .page-footer {
@@ -338,7 +350,7 @@ body {
   flex-wrap: wrap;
   list-style: none;
   justify-content: flex-start;
-  width: 142px;
+  min-width: 142px;
   margin: 0;
   padding: 0;
 }
@@ -363,6 +375,7 @@ body {
 }
 
 .phone-number {
+  display: block;
   font-family: inherit;
   font-weight: 400;
   font-size: 40px;
@@ -380,8 +393,14 @@ body {
 }
 
 .visually-hidden {
-  visibility: hidden;
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /*
@@ -403,8 +422,12 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   text-align: center;
-  padding: 30px 70px 70px;
+  padding-top: 35px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 70px;
   margin: 0;
+  margin-bottom: 50px;
 }
 
 .catalog-header {
@@ -491,11 +514,17 @@ body {
   width: 191px;
 }
 
+.catalog {
+  margin-top: 0;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
 .view-panel {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 50px 70px 40px;
+  margin-bottom: 40px;
 }
 
 .select-control {
@@ -521,8 +550,9 @@ body {
 .products-list {
   display: flex;
   flex-wrap: wrap;
-  padding: 40px 70px;
+  list-style: none;
   margin: 0;
+  padding: 0;
 }
 
 .product-list-card, .catalog-item {
@@ -620,6 +650,7 @@ body {
 
 .pagination {
   display: flex;
+  margin: 0;
   padding: 40px 70px 60px;
 }
 
@@ -627,6 +658,11 @@ body {
   margin-right: 8px;
   list-style: none;
 }
+
+.pagination-item:last-child {
+  margin-right: 0;
+}
+
 .pagination-link{
   display: block;
   background-color: #82b3d3;
@@ -640,6 +676,7 @@ body {
   color: white;
   text-decoration: none;
   text-align: center;
+  padding: 11px 10px;
 
 }
 

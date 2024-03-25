@@ -289,6 +289,8 @@ body {
   padding: 8px 50px;
   width: 376px;
   height: 52px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .subscription {
@@ -433,6 +435,7 @@ body {
 
 .catalog-header {
   text-align: left;
+  margin-bottom: 40px;
 }
 
 .main-inner-title {
@@ -441,6 +444,7 @@ body {
   font-size: 60px;
   line-height: 78px;
   margin: 0;
+  margin-bottom: 8px;
 }
 
 .breadcrumbs-list {
@@ -472,6 +476,8 @@ body {
 
 .catalog-filter-group {
   text-align: left;
+  border: none;
+  padding: 0;
 }
 
 .catalog-filter-title {
@@ -479,12 +485,31 @@ body {
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
+  margin-bottom: 32px;
+}
+
+.catalog-filter-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-filter-item {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  width: 191px;
+  margin-top: 56px;
 }
 
 .catalog-button{
@@ -497,9 +522,11 @@ body {
   text-transform: uppercase;
   text-align: center;
   border-radius: 4px;
+  border-color: transparent;
   padding: 8px 50px;
   width: 191px;
   height: 36px;
+  margin-bottom: 32px;
 }
 
 .catalog-reset-button {
@@ -511,19 +538,21 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
 }
 
 .filter-buttons {
   display: flex;
   flex-wrap: wrap;
-  align-items: end;
   width: 191px;
+  margin-top: 56px;
 }
 
 .catalog {
   margin-top: 0;
   padding-left: 70px;
   padding-right: 70px;
+  margin-bottom: 60px;
 }
 
 .view-panel {
@@ -561,8 +590,9 @@ body {
 }
 
 .products-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
   list-style: none;
   margin: 0;
   margin-bottom: 80px;
@@ -570,30 +600,27 @@ body {
 }
 
 .product-list-card {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 16px;
+  column-gap: 20px;
   font-size: 24px;
   line-height: 28px;
-}
-
-.product-list-card {
-  width: 340px;
-  list-style: none;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  min-width: 340px;
+  min-height: 438px;
   padding: 20px;
-}
-
-.product-list-card:nth-child(3n) {
-  margin-right: 0;
+  border-radius: 4px;
+  border: 1px solid #E6E6E6;
 }
 
 .hotel-image {
   max-width: 100%;
   height: auto;
+  margin-bottom: 16px;
 }
 
 .hotel-name-link {
+  grid-column: 1 / -1;
   text-decoration: none;
 }
 
@@ -603,6 +630,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: capitalize;
+  margin: 0;
 }
 
 .hotel-spelling {
@@ -611,6 +639,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333;
+  margin: 0;
 }
 
 .hotel-price {
@@ -620,42 +649,56 @@ body {
   line-height: 21px;
   color: #333;
   text-transform: capitalize;
+  text-align: right;
+  margin: 0;
 }
+
+.stars {
+  display: block;
+  width: 140px;
+  height: 36px;
+  margin: 0;
+}
+
 .product-raiting {
+  display: block;
   color: #333;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  width: 140px;
+  height: 37px;
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
   text-transform: uppercase;
   text-align: center;
+  padding-top: 9px;
+  margin: 0;
 }
 
-.button-details {
+.card-button{
   display: block;
   color: #ffffff;
-  background-color: #756157;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 4px;
   width: 140px;
   height: 36px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 0;
+}
+
+.button-details {
+  background-color: #756157;
 }
 
 .button-favourite, .button-favourite-selected {
-  display: block;
-  color: #ffffff;
   background-color: #82b3d3;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  text-decoration: none;
-  border-radius: 4px;
-  width: 140px;p
-  height: 36px;
 }
 
 .button-favourite-selected {
@@ -664,17 +707,13 @@ body {
 
 .pagination {
   display: flex;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.pagination-item {
+.pagination-item:not(:last-child) {
   margin-right: 8px;
-  list-style: none;
-}
-
-.pagination-item:last-child {
-  margin-right: 0;
 }
 
 .pagination-link{
@@ -698,9 +737,16 @@ body {
   background-color: #E5E5E5;
 }
 
- .pagination-item-more {
+ .pagination-link-more {
   display: block;
   background-color: #ffffff;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  padding-top: 20px;
  }
 
  .catalog-subscription {

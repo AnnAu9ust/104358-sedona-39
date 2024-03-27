@@ -58,8 +58,8 @@
                   <span class="visually-hidden">Главная.</span>
                 </a>
               </li>
-              <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link breadcrumbs-hotels">Гостиницы</a>
+              <li class="breadcrumbs-item breadcrumbs-hotels">
+                <a class="breadcrumbs-link" class="breadcrumbs-link-hotels">Гостиницы</a>
               </li>
             </ul>
           </header>
@@ -116,11 +116,11 @@
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                 <label for="min-price">
                   <span class="text-price">от</span>
-                  <input type="text" name="min-price" id="min-price" value="0" placeholder="от">
+                  <input class="price-input price-input-from" type="text" name="min-price" id="min-price" value="0" placeholder="от">
                 </label>
                 <label for="max-price">
                   <span class="text-price">до</span>
-                  <input type="text" name="max-price" id="max-price" value="9000" placeholder="до">
+                  <input class="price-input price-input-to" type="text" name="max-price" id="max-price" value="9000" placeholder="до">
                 </label>
               </fieldset>
               <div class="filter-buttons">
